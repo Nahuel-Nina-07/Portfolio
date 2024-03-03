@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/style-header.css" />
     <link rel="stylesheet" href="css/style-articulos.css" />
     <link rel="stylesheet" href="css/style-skills.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
@@ -178,98 +180,83 @@
             aria-labelledby="nav-proyectos-tab"
             tabindex="0"
           >
-            <!-- Muestra los proyectos en dispositivos pequeños -->
-            <section class="d-block d-sm-none">
-              <div class="d-flex justify-content-center">
-                <div
-                  class="proyRemeras d-flex flex-column overflow-hidden"
-                  style="width: 280px; height: 200px"
-                ></div>
-                <div class="text-light position-absolute mt-5">
-                  <h4 class="SubTitulos" style="font-size: 1rem">Sistema web Larvel</h4>
-                  <h3 class="Titulo">Sistema de <br>entrega de alimentos</h3>
-                  <a href="https://github.com/Nahuel-Nina-07/SistemaEntregaAlimentos" target="_blank">
-                    <button
-                    type="button"
-                    name="button"
-                    class="btn btn-primary rounded-pill"
-                  >
-                    <i class="bi bi-link"></i>
-                  </button>
-                  </a>
-                  
-                </div>
-              </div>
-
-              <div class="d-flex justify-content-center mt-4">
-                <div
-                  class="proyAutos d-flex flex-column overflow-hidden"
-                  style="width: 280px; height: 200px"
-                ></div>
-                <div class="text-light position-absolute mt-5">
-                  <h4 class="SubTitulos" style="font-size: 1rem">Sistema web FastAPI y React</h4>
-                  <h3 class="Titulo">Conexion con <br>FastAPI y React</h3>
-                  <a href="https://github.com/Nahuel-Nina-07/SistemaMusicaPythonReact.git" target="_blank">
-                    <button
-                    type="button"
-                    name="button"
-                    class="btn btn-primary rounded-pill"
-                  >
-                    <i class="bi bi-link"></i>
-                  </button>
-                  </a>
-                </div>
-              </div>
-            </section>
+            
 
             <!-- Muestra los proyectos en dispositivos medianos -->
-            <section class="d-none d-sm-block d-md-none">
-              <div class="row">
-                <div class="col-sm-6 d-flex justify-content-center">
-                  <div
-                    class="proyRemeras d-flex flex-column overflow-hidden"
-                    style="width: 400px; height: 200px"
-                  ></div>
-                  <div class="text-light position-absolute mt-5">
-                    <h4 class="SubTitulos" style="font-size: 1rem">
-                      Sistema web Laravel
-                    </h4>
-                    <h3 class="Titulo">Sistema de <br>entrega de alimentos</h3>
-                    <a href="https://github.com/Nahuel-Nina-07/SistemaEntregaAlimentos" target="_blank">
-                      <button
-                      type="button"
-                      name="button"
-                      class="btn btn-primary rounded-pill"
-                    >
-                      <i class="bi bi-link"></i>
-                    </button>
-                    </a>
+
+            <section>
+              <div class="contenedor mx-auto">
+                <div class="carta">
+                  <div class="contenido">
+                    <div class="imgBx">
+                      <img src="/img/proyectos/img.png" class="rounded" />
+                    </div>
+                    <div class="contentBx">
+                      <h3>
+                        Sistema web FastAPI y React<br /><span
+                          >Conexion con FastAPI y React</span
+                        >
+                      </h3>
+                    </div>
                   </div>
+                  <ul class="sci mx-auto">
+                    <li>
+                      <a href="">happy</a>
+                    </li>
+                    <li>
+                      <a href="">birth</a>
+                    </li>
+                  </ul>
                 </div>
 
-                <div class="col-sm-6 d-flex justify-content-center">
-                  <div
-                    class="proyAutos d-flex flex-column overflow-hidden"
-                    style="width: 400px; height: 200px"
-                  ></div>
-                  <div class="text-light position-absolute mt-5">
-                    <h4 class="SubTitulos" style="font-size: 1rem">
-                      Sistema web FastAPI y React
-                    </h4>
-                    <h3 class="Titulo">Conexion con <br>FastAPI y React</h3>
-                    <a href="https://github.com/Nahuel-Nina-07/SistemaMusicaPythonReact.git" target="_blank">
-                      <button
-                      type="button"
-                      name="button"
-                      class="btn btn-primary rounded-pill"
-                    >
-                      <i class="bi bi-link"></i>
-                    </button>
-                    </a>
+                <div class="carta">
+                  <div class="contenido">
+                    <div class="imgBx">
+                      <img
+                        src="img/proyectos/SisremaEntregaAlimentos.png"
+                        class="rounded"
+                      />
+                    </div>
+                    <div class="contentBx">
+                      <h3>
+                        Sistema web Laravel<br /><span
+                          >Sistema de entrega de alimentos</span
+                        >
+                      </h3>
+                    </div>
                   </div>
+                  <ul class="sci mx-auto">
+                    <li>
+                      <a href="">happy</a>
+                    </li>
+                    <li>
+                      <a href="">birth</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="carta">
+                  <div class="contenido">
+                    <div class="imgBx">
+                      <img src="/img/proyectos/img.png" class="rounded" />
+                    </div>
+                    <div class="contentBx">
+                      <h3>Giraffe<br /><span>Happy Birthday</span></h3>
+                    </div>
+                  </div>
+                  <ul class="sci mx-auto">
+                    <li>
+                      <a href="">happy</a>
+                    </li>
+                    <li>
+                      <a href="">birth</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </section>
+
+            <!-- Muestra los proyectos en dispositivos grandes -->
           </div>
 
           <!-- Muestra las habilidades del programador en dispositivos pequeños -->
@@ -420,6 +407,92 @@
                   </div>
                 </div>
               </div>
+              <div
+                class="d-flex justify-content-center"
+                style="margin-top: 30px"
+              >
+                <div class="skills__area">
+                  <h3 class="skills__title">Habilidades Blandas</h3>
+
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Trabajo en Equipo</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Resolución de problemas</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Resiliencia</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Comunicación efectiva</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Adaptabilidad</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Ética profesional</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <!-- Muestra las habilidades en dispositivos medianos -->
@@ -558,6 +631,92 @@
                             <h3 class="skills__name">S.O. Linux/Bash</h3>
                             <span class="skills__level">Básico</span>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-center"
+                style="margin-top: 5px"
+              >
+                <div class="skills__area">
+                  <h3 class="skills__title">Habilidades Blandas</h3>
+
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Trabajo en Equipo</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Resolución de problemas</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Resiliencia</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Comunicación efectiva</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Adaptabilidad</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)"
+                        >
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Ética profesional</h3>
                         </div>
                       </div>
                     </div>
@@ -875,31 +1034,116 @@
         </div>
       </div>
 
+      <div class="d-flex justify-content-center" style="margin-top: -95px">
+        <div class="skills__area">
+          <h3 class="skills__title">Habilidades Blandas</h3>
+
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i
+                  class="bi bi-patch-check"
+                  style="color: var(--color-principal)"
+                >
+                </i>
+
+                <div>
+                  <h3 class="skills__name">Trabajo en Equipo</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i
+                  class="bi bi-patch-check"
+                  style="color: var(--color-principal)"
+                >
+                </i>
+
+                <div>
+                  <h3 class="skills__name">Resolución de problemas</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i
+                  class="bi bi-patch-check"
+                  style="color: var(--color-principal)"
+                >
+                </i>
+
+                <div>
+                  <h3 class="skills__name">Resiliencia</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__group">
+              <div class="skills__data">
+                <i
+                  class="bi bi-patch-check"
+                  style="color: var(--color-principal)"
+                >
+                </i>
+
+                <div>
+                  <h3 class="skills__name">Comunicación efectiva</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i
+                  class="bi bi-patch-check"
+                  style="color: var(--color-principal)"
+                >
+                </i>
+
+                <div>
+                  <h3 class="skills__name">Adaptabilidad</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i
+                  class="bi bi-patch-check"
+                  style="color: var(--color-principal)"
+                >
+                </i>
+
+                <div>
+                  <h3 class="skills__name">Ética profesional</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Sección Proyectos -->
 
       <h2 id="proyectos">Proyectos</h2>
-      <div
-        class="mx-5 py-5 d-flex justify-content-center"
-        style="margin-top: 100px; margin-bottom: 100px"
-      >
+      <div class="mx-5 py-5 d-flex justify-content-center">
         <div class="d-flex justify-content-center" style="margin-inline: 2%">
           <div
             class="proyRemeras d-flex flex-column overflow-hidden"
             style="width: 400px; height: 200px"
           ></div>
           <div class="text-light position-absolute mt-5">
-            <h4 class="SubTitulos" style="font-size: 1rem">Sistema web Laravel</h4>
+            <h4 class="SubTitulos" style="font-size: 1rem">
+              Sistema web Laravel
+            </h4>
             <h3 class="Titulo">Sistema de entrega de alimentos</h3>
-            <a href="https://github.com/Nahuel-Nina-07/SistemaEntregaAlimentos" target="_blank">
-              <button
-              type="button"
-              name="button"
-              class="btn btn-primary rounded-pill"
+            <a
+              href="https://github.com/Nahuel-Nina-07/SistemaEntregaAlimentos"
+              target="_blank"
             >
-              <i class="bi bi-link"></i>
-            </button>
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary rounded-pill"
+              >
+                <i class="bi bi-link"></i>
+              </button>
             </a>
-            
           </div>
         </div>
 
@@ -909,21 +1153,149 @@
             style="width: 400px; height: 200px"
           ></div>
           <div class="text-light position-absolute mt-5">
-            <h4 class="SubTitulos" style="font-size: 1rem">Sistema web FastAPI y React</h4>
+            <h4 class="SubTitulos" style="font-size: 1rem">
+              Sistema web FastAPI y React
+            </h4>
             <h3 class="Titulo">Conexion con FastAPI y React</h3>
-            <a href="https://github.com/Nahuel-Nina-07/SistemaMusicaPythonReact.git" target="_blank">
-              <button
-              type="button"
-              name="button"
-              class="btn btn-primary rounded-pill"
+            <a
+              href="https://github.com/Nahuel-Nina-07/SistemaMusicaPythonReact.git"
+              target="_blank"
             >
-              <i class="bi bi-link"></i>
-            </button>
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary rounded-pill"
+              >
+                <i class="bi bi-link"></i>
+              </button>
             </a>
-            
           </div>
         </div>
       </div>
+
+      <div class="mx-5 py-5 d-flex justify-content-center">
+        <div class="d-flex justify-content-center" style="margin-inline: 2%">
+          <div
+            class="proyRemeras d-flex flex-column overflow-hidden"
+            style="width: 400px; height: 200px"
+          ></div>
+          <div class="text-light position-absolute mt-5">
+            <h4 class="SubTitulos" style="font-size: 1rem">
+              Sistema web Laravel
+            </h4>
+            <h3 class="Titulo">Sistema de entrega de alimentos</h3>
+            <a
+              href="https://github.com/Nahuel-Nina-07/SistemaEntregaAlimentos"
+              target="_blank"
+            >
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary rounded-pill"
+              >
+                <i class="bi bi-link"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center" style="margin-inline: 2%">
+          <div
+            class="proyAutos d-flex flex-column overflow-hidden"
+            style="width: 400px; height: 200px"
+          ></div>
+          <div class="text-light position-absolute mt-5">
+            <h4 class="SubTitulos" style="font-size: 1rem">
+              Sistema web FastAPI y React
+            </h4>
+            <h3 class="Titulo">Conexion con FastAPI y React</h3>
+            <a
+              href="https://github.com/Nahuel-Nina-07/SistemaMusicaPythonReact.git"
+              target="_blank"
+            >
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary rounded-pill"
+              >
+                <i class="bi bi-link"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="contenedor mx-auto">
+          <div class="carta">
+            <div class="contenido">
+              <div class="imgBx">
+                <img src="/img/proyectos/img.png" class="rounded" />
+              </div>
+              <div class="contentBx">
+                <h3>
+                  Sistema web FastAPI y React<br /><span
+                    >Conexion con FastAPI y React</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <ul class="sci mx-auto">
+              <li>
+                <a href="">happy</a>
+              </li>
+              <li>
+                <a href="">birth</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="carta">
+            <div class="contenido">
+              <div class="imgBx">
+                <img
+                  src="img/proyectos/SisremaEntregaAlimentos.png"
+                  class="rounded"
+                />
+              </div>
+              <div class="contentBx">
+                <h3>
+                  Sistema web Laravel<br /><span
+                    >Sistema de entrega de alimentos</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <ul class="sci mx-auto">
+              <li>
+                <a href="">happy</a>
+              </li>
+              <li>
+                <a href="">birth</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="carta">
+            <div class="contenido">
+              <div class="imgBx">
+                <img src="/img/proyectos/img.png" class="rounded" />
+              </div>
+              <div class="contentBx">
+                <h3>Giraffe<br /><span>Happy Birthday</span></h3>
+              </div>
+            </div>
+            <ul class="sci mx-auto">
+              <li>
+                <a href="">happy</a>
+              </li>
+              <li>
+                <a href="">birth</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <!-- Sección Contacto -->
 
@@ -938,7 +1310,11 @@
               <i class="bi bi-envelope"></i>
               <div class="d-block">
                 <h3 class="Titulo">Correo</h3>
-                <span class="SubTitulos">cristian.nina@uab.edu.bo</span>
+                <span class="SubTitulos">
+                  <a href=" mailto:cristian.nina@uab.edu.bo">
+                    cristian.nina@uab.edu.bo</a
+                  ></span
+                >
               </div>
             </div>
             <div class="d-flex grid">
