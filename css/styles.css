@@ -139,6 +139,14 @@ ul li .icon .fa-brands {
     font-size: 6em;
     color: #3429d6;
 }
+ul li .icon .fa-regular {
+    font-size: 6em;
+    color: #3429d6;
+}
+ul li .icon .fa-solid {
+    font-size: 6em;
+    color: #3429d6;
+}
 ul li .icon::before {
     font-family: "FontAwesome";
     position: absolute;
@@ -149,34 +157,38 @@ ul li .icon::before {
     overflow: hidden;
     transition: 0.6s ease-in-out;
 }
-
 ul li:nth-child(2) .icon::before {
+    content: "\f0e0";
+    color: #606870;
+    border-bottom: 4px solid #606870;
+}
+/* ul li:nth-child(2) .icon::before {
     content: "\f08c";
     color: #004182;
     border-bottom: 4px solid #004182;
-}
-ul li:nth-child(3) .icon::before {
+} */
+ul li:nth-child(1) .icon::before {
     content: "\f232";
     color: #25D366;
     border-bottom: 4px solid #25D366;
 }
-ul li:nth-child(1) .icon::before {
+/* ul li:nth-child(1) .icon::before {
     content: "\e61a";
     color: #ffffff;
     border-bottom: 4px solid #ffffff;
-}
+} */
 
-ul li:nth-child(5) .icon::before {
+ul li:nth-child(3) .icon::before {
     content: "\f09b";
     color: #ffffff;
     border-bottom: 4px solid #f5f5f5;
 }
 
-ul li:nth-child(4) .icon::before {
+/* ul li:nth-child(4) .icon::before {
     content: "\f2c6";
     color: #1d98dc;
     border-bottom: 4px solid #1d98dc;
-}
+} */
 
 ul li:hover .icon::before {
     height: 130%;

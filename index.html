@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Mi portafolio</title>
+    <title>Portafolio | Cristian Nahuel Nina Mamani</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- CDN - Bootstrap -->
@@ -19,89 +19,80 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
 
-    <!-- CSS locales -->
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/0b506ee94b.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- CSS locales -->
     <link rel="stylesheet" href="css/style-body.css" />
     <link rel="stylesheet" href="css/style-header.css" />
     <link rel="stylesheet" href="css/style-articulos.css" />
     <link rel="stylesheet" href="css/style-skills.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Tailwind (si lo estás usando) -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
-    <!-- ========= Developer profile -->
+    <!-- ========= Developer profile (mobile header) -->
     <header class="container-fluid px-5 pt-5">
-      <!-- Blank space -->
-      <div class="row d-block d-md-none mb-5">
-        <div class="d-flex justify-content-end"></div>
-      </div>
-
       <!-- Foto de perfil -->
       <div class="row d-block d-md-none justify-content-center px-5 mb-3">
         <div class="col-12 d-flex justify-content-center">
           <div
             class="d-flex justify-content-center rounded-circle overflow-hidden circuloPerfil"
           >
-            <img src="img/NahuelNinaM.png" alt="" style="width: 90px" />
+            <img src="img/NahuelNinaM.png" alt="Foto de perfil" style="width: 90px" />
           </div>
         </div>
       </div>
 
-      <!-- Nombre del desarrollador proyecto_1.jpg-->
+      <!-- Nombre -->
       <div class="row d-block d-md-none justify-content-center">
         <div class="col-12 d-flex justify-content-center flex-column">
-          <h1 class="Nombre mt-3 text-center m-3">Nahuel Nina</h1>
-          <label class="Trabajo text-center">Desarrollador de Software</label>
+          <h1 class="Nombre mt-3 text-center m-3">Cristian Nahuel Nina</h1>
+          <label class="Trabajo text-center">Full Stack Developer | .NET (C#) & Angular</label>
         </div>
       </div>
     </header>
     <!-- ========= -->
 
-    <!-- Body main content -->
     <!-- ======== Diseño para dispositivos móviles ======== -->
     <section class="d-block d-md-none">
       <article class="px-5 pb-5">
-        <!-- Información del desarrollador -->
+        <!-- Información rápida -->
         <div
           class="d-block d-md-none justify-content-center py-4 d-flex flex-row mt-4 rounded"
         >
           <div class="d-flex flex-column">
-            <h1 class="Titulo text-center">4</h1>
+            <h1 class="Titulo text-center">3</h1>
             <label class="SubTitulos text-center w-100">
-              Certificados <br />
-              relevantes
+              Proyectos <br />
+              destacados
             </label>
           </div>
           <div class="d-flex flex-column mx-3">
-            <h1 class="Titulo text-center">3</h1>
+            <h1 class="Titulo text-center">2</h1>
             <label class="SubTitulos text-center w-100">
-              Años de estudio<br />en la UAB</label
-            >
+              Experiencias<br />profesionales
+            </label>
           </div>
           <div class="d-flex flex-column">
-            <h1 class="Titulo text-center">9</h1>
+            <h1 class="Titulo text-center">10+</h1>
             <label class="SubTitulos text-center w-100">
-              Habilidades <br />
-              técnicas
+              Tecnologías <br />
+              clave
             </label>
           </div>
         </div>
 
-        <!-- Descargar curriculum y redes sociales -->
-        <div
-          class="d-block d-md-none d-flex flex-row justify-content-center py-2 px-2"
-        >
+        <!-- Descargar CV y redes -->
+        <div class="d-block d-md-none d-flex flex-row justify-content-center py-2 px-2">
           <div class="d-flex justify-content-center">
-            <a
-              href="pdf/Curriculumvitae.pdf"
-              download
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a href="pdf/CV_Cristian_Nahuel_Nina.pdf" download rel="noopener noreferrer" target="_blank">
               <button
                 type="button"
                 name="button"
@@ -116,31 +107,27 @@
 
           <div class="d-flex justify-content-center align-items-center">
             <a
-              href="https://t.me/NahuelNina"
-              target="_blank"
-              type="button"
-              class="btn btn-outline-primary"
-            >
-              <i class="bi bi-telegram"></i>
-            </a>
-            <a
-              href="mailto:cristian.nina@uab.edu.bo"
+              href="mailto:ninacristian55@gmail.com"
               type="button"
               class="btn btn-outline-primary ms-1"
+              aria-label="Email"
             >
-              <i class="bi bi-envelope"> </i>
+              <i class="bi bi-envelope"></i>
             </a>
             <a
               href="https://github.com/Nahuel-Nina-07"
+              target="_blank"
+              rel="noopener noreferrer"
               type="button"
               class="btn btn-outline-primary ms-1"
+              aria-label="GitHub"
             >
-              <i class="bi bi-github"> </i>
+              <i class="bi bi-github"></i>
             </a>
           </div>
         </div>
 
-        <!-- Barra de tabs para moverse por el contenido de la página web -->
+        <!-- Barra de tabs -->
         <nav class="d-flex justify-content-center d-block d-md-none">
           <div
             class="nav nav-tabs my-4 px-4 d-flex justify-content-center border-0 py-3"
@@ -175,8 +162,9 @@
           </div>
         </nav>
 
-        <!-- Paneles que contienen la información de los tabs -->
+        <!-- Paneles -->
         <div class="tab-content d-block d-md-none" id="nav-tabContent">
+          <!-- Proyectos (mobile) -->
           <div
             class="tab-pane fade show active"
             id="nav-proyectos"
@@ -184,109 +172,128 @@
             aria-labelledby="nav-proyectos-tab"
             tabindex="0"
           >
-            
-
-            <!-- Muestra los proyectos en dispositivos medianos -->
-
             <section>
               <div class="contenedor mx-auto">
+                <!-- Proyecto: FastAPI + React -->
                 <div class="carta">
                   <div class="contenido">
                     <div class="imgBx">
-                      <img src="img/proyectos/img.png" class="rounded" />
+                      <img src="img/proyectos/img.png" class="rounded" alt="FastAPI + React" />
                     </div>
                     <div class="contentBx">
                       <h3 class="tituloh3">
-                        Sistema web FastAPI y React<br /><span
-                          >Conexion con FastAPI y React</span
-                        >
+                        Sistema web FastAPI y React<br />
+                        <span>Integración FastAPI + React</span>
                       </h3>
                     </div>
                   </div>
                   <ul class="sci mx-auto">
                     <li>
-                      <a href="#" target="_blank" id="style-4" data-replace-class="" data-replace="eye"><span><i class="fa-solid fa-eye"></i></span></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/Nahuel-Nina-07/SistemaMusicaPythonReact.git" target="_blank" id="style-4" data-replace-class="" data-replace="github"><span><i class="fa-brands fa-square-github"></i></span></a>
+                      <a
+                        href="https://github.com/Nahuel-Nina-07/SistemaMusicaPythonReact.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id="style-4"
+                        data-replace="github"
+                      >
+                        <span><i class="fa-brands fa-square-github"></i></span>
+                      </a>
                     </li>
                   </ul>
                 </div>
 
+                <!-- Proyecto: Entrega de Alimentos -->
                 <div class="carta">
                   <div class="contenido">
                     <div class="imgBx">
                       <img
                         src="img/proyectos/SisremaEntregaAlimentos.png"
                         class="rounded"
+                        alt="Sistema de entrega de alimentos"
                       />
                     </div>
                     <div class="contentBx">
                       <h3 class="tituloh3">
-                        Sistema web Laravel<br /><span
-                          >Sistema de entrega de alimentos</span
-                        >
+                        Sistema web Laravel<br />
+                        <span>Sistema de entrega de alimentos</span>
                       </h3>
                     </div>
                   </div>
                   <ul class="sci mx-auto">
                     <li>
-                      <a href="#" target="_blank" id="style-4" data-replace-class="" data-replace="eye"><span><i class="fa-solid fa-eye"></i></span></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/Nahuel-Nina-07/SistemaEntregaAlimentos" target="_blank" id="style-4" data-replace-class="" data-replace="github"><span><i class="fa-brands fa-square-github"></i></span></a>
+                      <a
+                        href="https://github.com/Nahuel-Nina-07/SistemaEntregaAlimentos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id="style-4"
+                        data-replace="github"
+                      >
+                        <span><i class="fa-brands fa-square-github"></i></span>
+                      </a>
                     </li>
                   </ul>
                 </div>
 
+                <!-- Proyecto: Laravel + Angular -->
                 <div class="carta">
                   <div class="contenido">
                     <div class="imgBx">
-                      <img src="img/proyectos/LA.jpg" class="rounded" />
+                      <img src="img/proyectos/LA.jpg" class="rounded" alt="Laravel + Angular" />
                     </div>
                     <div class="contentBx">
                       <h3 class="tituloh3">
-                        Sistema web Laravel y Angular<br /><span>Conexion con Laravel y Angular</span>
+                        Sistema web Laravel y Angular<br />
+                        <span>Integración Laravel + Angular</span>
                       </h3>
                     </div>
                   </div>
                   <ul class="sci mx-auto">
                     <li>
-                      <a href="#" target="_blank" id="style-4" data-replace-class="" data-replace="eye"><span><i class="fa-solid fa-eye"></i></span></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/Nahuel-Nina-07/Crud_Laravel_Angular_Relacion.git" target="_blank" id="style-4" data-replace-class="" data-replace="github"><span><i class="fa-brands fa-square-github"></i></span></a>
+                      <a
+                        href="https://github.com/Nahuel-Nina-07/Crud_Laravel_Angular_Relacion.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id="style-4"
+                        data-replace="github"
+                      >
+                        <span><i class="fa-brands fa-square-github"></i></span>
+                      </a>
                     </li>
                   </ul>
                 </div>
 
+                <!-- Proyecto: C# Desktop -->
                 <div class="carta">
                   <div class="contenido">
                     <div class="imgBx">
-                      <img src="img/proyectos/CSharp.png" class="rounded" />
+                      <img src="img/proyectos/CSharp.png" class="rounded" alt="C# Desktop" />
                     </div>
                     <div class="contentBx">
                       <h3 class="tituloh3">
-                        Sistema de Escritorio C#<br /><span>Arboles Nodos Colas Bubble Sort</span>
+                        Aplicación de Escritorio C#<br />
+                        <span>Árboles, colas, Bubble Sort, Merge Sort</span>
                       </h3>
                     </div>
                   </div>
                   <ul class="sci mx-auto">
                     <li>
-                      <a href="#" target="_blank" id="style-4" data-replace-class="" data-replace="eye"><span><i class="fa-solid fa-eye"></i></span></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/Nahuel-Nina-07/BubbleSortArbolesMergeSortColas.git" target="_blank" id="style-4" data-replace-class="" data-replace="github"><span><i class="fa-brands fa-square-github"></i></span></a>
+                      <a
+                        href="https://github.com/Nahuel-Nina-07/BubbleSortArbolesMergeSortColas.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id="style-4"
+                        data-replace="github"
+                      >
+                        <span><i class="fa-brands fa-square-github"></i></span>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </section>
-
-            <!-- Muestra los proyectos en dispositivos grandes -->
           </div>
 
-          <!-- Muestra las habilidades del programador en dispositivos pequeños -->
+          <!-- Habilidades (mobile) -->
           <div
             class="tab-pane fade"
             id="nav-habilidades"
@@ -297,87 +304,41 @@
             <section class="d-block d-sm-none">
               <div class="d-flex justify-content-center">
                 <div class="skills__area">
-                  <h3 class="skills__title">Desarrollo Frontend</h3>
+                  <h3 class="skills__title">Stack Principal</h3>
 
+                  <!-- Nota: eliminé "Básico/Intermedio" para que no te reste -->
                   <div class="skills__box">
                     <div class="skills__group">
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-                        <div>
-                          <h3 class="skills__name">HTML</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">.NET (C#)</h3></div>
                       </div>
 
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">CSS</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Angular</h3></div>
                       </div>
 
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">JavaScript</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Entity Framework Core</h3></div>
                       </div>
                     </div>
 
                     <div class="skills__group">
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Bootstrap</h3>
-                          <span class="skills__level">Básico</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">SQL Server / PostgreSQL</h3></div>
                       </div>
 
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Git</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Git / GitHub</h3></div>
                       </div>
 
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Angular</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Linux / Bash</h3></div>
                       </div>
                     </div>
                   </div>
@@ -386,161 +347,60 @@
 
               <div class="d-flex justify-content-center mt-4">
                 <div class="skills__area">
-                  <h3 class="skills__title">Desarrollo Backend</h3>
-
+                  <h3 class="skills__title">Otros</h3>
                   <div class="skills__box">
                     <div class="skills__group">
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">PHP</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Laravel</h3></div>
                       </div>
-
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">MySQL</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Python</h3></div>
                       </div>
-
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">C#</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="skills__group">
-                      <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Python</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
-                      </div>
-
-                      <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">S.O. Linux/Bash</h3>
-                          <span class="skills__level">Intermedio</span>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Tailwind CSS</h3></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="d-flex justify-content-center"
-                style="margin-top: 30px"
-              >
+
+              <div class="d-flex justify-content-center" style="margin-top: 30px">
                 <div class="skills__area">
                   <h3 class="skills__title">Habilidades Blandas</h3>
 
                   <div class="skills__box">
                     <div class="skills__group">
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Trabajo en Equipo</h3>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Trabajo en equipo</h3></div>
                       </div>
 
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Resolución de problemas</h3>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Resolución de problemas</h3></div>
                       </div>
 
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Resiliencia</h3>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Comunicación efectiva</h3></div>
                       </div>
                     </div>
 
                     <div class="skills__group">
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Comunicación efectiva</h3>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Adaptabilidad</h3></div>
                       </div>
-
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Adaptabilidad</h3>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Ética profesional</h3></div>
                       </div>
-
                       <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Ética profesional</h3>
-                        </div>
+                        <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                        <div><h3 class="skills__name">Resiliencia</h3></div>
                       </div>
                     </div>
                   </div>
@@ -548,309 +408,45 @@
               </div>
             </section>
 
-            <!-- Muestra las habilidades en dispositivos medianos -->
-            <section class="d-none d-sm-block d-md-none">
-              <div class="row">
-                <div class="col-sm-6 d-flex justify-content-center">
-                  <div class="skills__area">
-                    <h3 class="skills__title">Desarrollo Frontend</h3>
-
-                    <div class="skills__box">
-                      <div class="skills__group">
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">HTML</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">CSS</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">JavaScript</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="skills__group">
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">Bootstrap</h3>
-                            <span class="skills__level">Básico</span>
-                          </div>
-                        </div>
-
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">Git</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">Angular</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 d-flex justify-content-center">
-                  <div class="skills__area">
-                    <h3 class="skills__title">Desarrollo Backend</h3>
-
-                    <div class="skills__box">
-                      <div class="skills__group">
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">PHP</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">MySQL - Sql Server-SQL Server</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">C#</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="skills__group">
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-
-                          <div>
-                            <h3 class="skills__name">Python</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-                        <div class="skills__data">
-                          <i
-                            class="bi bi-patch-check"
-                            style="color: var(--color-principal)"
-                          >
-                          </i>
-                          <div>
-                            <h3 class="skills__name">S.O. Linux/Bash</h3>
-                            <span class="skills__level">Intermedio</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-center"
-                style="margin-top: 5px"
-              >
-                <div class="skills__area">
-                  <h3 class="skills__title">Habilidades Blandas</h3>
-
-                  <div class="skills__box">
-                    <div class="skills__group">
-                      <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Trabajo en Equipo</h3>
-                        </div>
-                      </div>
-
-                      <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Resolución de problemas</h3>
-                        </div>
-                      </div>
-
-                      <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Resiliencia</h3>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="skills__group">
-                      <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Comunicación efectiva</h3>
-                        </div>
-                      </div>
-
-                      <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Adaptabilidad</h3>
-                        </div>
-                      </div>
-
-                      <div class="skills__data">
-                        <i
-                          class="bi bi-patch-check"
-                          style="color: var(--color-principal)"
-                        >
-                        </i>
-
-                        <div>
-                          <h3 class="skills__name">Ética profesional</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <!-- Si quieres mantener tus layouts para sm/md aquí, puedes duplicar lo mismo -->
           </div>
         </div>
       </article>
     </section>
-    <!-- ======== Cierre para dispositivos móviles ======== -->
+    <!-- ======== Cierre para móviles ======== -->
 
     <!-- ======== Apertura para tablets y computadoras ======== -->
     <section class="d-none d-md-block pt-5">
       <nav class="navbar navbar-expand fixed-top px-5 barra-mobiles">
         <div class="container-fluid mt-3 mb-3 px-5">
-          <a class="TituloBrand" href="#"> Nahuel Nina </a>
+          <a class="TituloBrand" href="#">Cristian Nina</a>
 
           <div class="navbar-nav">
-            <a class="TitulosNav" href="#"> Inicio </a>
-
-            <a class="TitulosNav" href="#sobreMi"> Sobre mí </a>
-
-            <a class="TitulosNav" href="#habilidades"> Habilidades </a>
-
-            <a class="TitulosNav" href="#proyectos"> Proyectos </a>
-
-            <a class="TitulosNav" href="#contacto"> Contacto </a>
+            <a class="TitulosNav" href="#inicio">Inicio</a>
+            <a class="TitulosNav" href="#sobreMi">Sobre mí</a>
+            <a class="TitulosNav" href="#habilidades">Habilidades</a>
+            <a class="TitulosNav" href="#proyectos">Proyectos</a>
+            <a class="TitulosNav" href="#contacto">Contacto</a>
           </div>
         </div>
       </nav>
 
-      <!-- Muestra la información principal del desarrollador -->
-      <div
-        id="inicio"
-        class="mx-5 py-5 d-flex"
-        style="margin-top: 0px; margin-bottom: 0px"
-      >
-        <div
-          class="w-25 d-flex justify-content-center flex-column align-items-center"
-        ></div>
+      <!-- HERO -->
+      <div id="inicio" class="mx-5 py-5 d-flex" style="margin-top: 0; margin-bottom: 0">
+        <div class="w-25 d-flex justify-content-center flex-column align-items-center"></div>
 
         <div class="w-75 d-flex pt-4 py-5 mb-5">
           <div class="w-50">
             <h1 class="TituloQuienSoy">Hola, soy</h1>
             <h1 class="TituloQuienSoy">
-              Nahuel Nina <i class="bi bi-code-slash"></i>
+              Cristian Nahuel Nina <i class="bi bi-code-slash"></i>
             </h1>
             <h2 class="SubTitulosQuienSoy text-start my-2">
-              Desarrollador de Software
+              Full Stack Developer | .NET (C#) & Angular
             </h2>
             <p class="ParrafoQuienSoy text-start pe-5">
-              Desarrollador, experto en el uso de diferentes tecnologías y gran
-              apasionado de la programación.
+              Desarrollador enfocado en .NET (Clean Architecture), EF Core y Angular.
+              Experiencia en migración SQL Server → PostgreSQL, autenticación JWT y módulos de roles/permisos (RBAC).
             </p>
 
             <a href="#contacto">
@@ -860,101 +456,84 @@
                 class="btn btn-primary p-3 me-3 SubTitulos my-4 py-12"
                 style="font-size: 0.9rem"
               >
-                Contactame
-                <i
-                  class="bi bi-caret-right-fill ms-3"
-                  style="font-size: 0.9rem"
-                >
-                </i>
+                Contáctame
+                <i class="bi bi-caret-right-fill ms-3" style="font-size: 0.9rem"></i>
+              </button>
+            </a>
+
+            <a href="pdf/CV_Cristian_Nahuel_Nina.pdf" target="_blank" rel="noopener noreferrer">
+              <button
+                type="button"
+                name="button"
+                class="btn btn-outline-primary p-3 SubTitulos my-4 py-12"
+                style="font-size: 0.9rem"
+              >
+                Ver CV (PDF)
+                <i class="bi bi-file-earmark-text ms-2" style="font-size: 0.9rem"></i>
               </button>
             </a>
           </div>
+
           <div class="home_img">
-            <div
-              class="d-flex justify-content-center rounded-circle overflow-hidden circuloPerfilGrande"
-            >
-              <img src="img/NahuelNinaM.png" alt="" style="width: 225px" />
+            <div class="d-flex justify-content-center rounded-circle overflow-hidden circuloPerfilGrande">
+              <img src="img/NahuelNinaM.png" alt="Foto de perfil" style="width: 225px" />
             </div>
           </div>
         </div>
       </div>
 
+      <!-- ICONOS / REDES -->
       <div class="mx-auto">
         <ul class="mx-auto">
           <li>
-            <a class="icon" href="#" target="_blank"
-              ><i class="fa-brands fa-square-x-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a class="icon" href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a class="icon" href="http://wa.me/59172247797" target="_blank"
+            <a class="icon" href="http://wa.me/59172247797" target="_blank" rel="noopener noreferrer"
               ><i class="fa-brands fa-whatsapp whatsapp"></i
             ></a>
           </li>
           <li>
-            <a class="icon" href="https://t.me/NahuelNina" target="_blank"
-              ><i class="fa-brands fa-telegram"></i
-            ></a>
+            <a class="icon" href="mailto:ninacristian55@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope envelope"></i></a>
           </li>
           <li>
-            <a class="icon" href="https://github.com/Nahuel-Nina-07" target="_blank"
+            <a class="icon" href="https://github.com/Nahuel-Nina-07" target="_blank" rel="noopener noreferrer"
               ><i class="fa-brands fa-github github"></i
             ></a>
           </li>
         </ul>
       </div>
 
-      <!-- Sección Sobre mí -->
-      <div
-        id="inicio"
-        class="mx-5 py-5 d-flex"
-        style="margin-top: 50px; margin-bottom: 50px"
-      >
+      <!-- SOBRE MÍ -->
+      <div class="mx-5 py-5 d-flex" style="margin-top: 50px; margin-bottom: 50px">
         <div class="sobreMi_container d-flex justify-content-center">
           <div class="img-sobreMi">
             <img
               src="img/NahuelNinaM.png"
-              alt=""
+              alt="Foto"
               class="circuloPerfilGrande img-sobreMi-estilo"
             />
           </div>
+
           <div class="sobreMi-data w-50">
-            <h2 id="sobreMi" class="text-2xl font-bold m-2 p-2" >Sobre mí</h2>
+            <h2 id="sobreMi" class="text-2xl font-bold m-2 p-2">Sobre mí</h2>
             <p>
-              Me llamo Nahuel Nina.<br />
-              Soy desarrollador de software con una profunda pasión por la tecnología. Desde que comencé mi camino en la ingeniería de sistemas, me he sumergido en el fascinante mundo del desarrollo, explorando diversas áreas y adquiriendo experiencia en soluciones tanto frontend como backend.
+              Ingeniero de Sistemas y Full Stack Developer con experiencia en desarrollo de sistemas institucionales y plataformas e-commerce.
+              Trabajo con .NET (Clean Architecture), EF Core, SQL Server/PostgreSQL y Angular (17/18), con enfoque en mantenibilidad, seguridad (JWT) y control de accesos (RBAC).
             </p>
+
             <div class="sobreMi-info">
               <div class="sobreMi-info-box">
-                <span class="Titulo d-block text-center">4</span>
-                <span class="SubTitulos d-block text-center"
-                  >Certificados relevantes
-                </span>
+                <span class="Titulo d-block text-center">2</span>
+                <span class="SubTitulos d-block text-center">Experiencias</span>
               </div>
-              <!-- <div class="sobreMi-info-box">
-                <span class="Titulo d-block text-center">3</span>
-                <span class="SubTitulos d-block text-center"
-                  >Años de estudio en la UAB
-                </span>
-              </div> -->
+
               <div class="sobreMi-info-box">
-                <span class="Titulo d-block text-center">11</span>
-                <span class="SubTitulos d-block text-center">
-                  Habilidades técnicas
-                </span>
+                <span class="Titulo d-block text-center">10+</span>
+                <span class="SubTitulos d-block text-center">Tecnologías clave</span>
               </div>
             </div>
 
             <div class="d-flex justify-content-center">
-              <a
-                href="pdf/Curriculumvitae.pdf"
-                download
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href="pdf/CV_Cristian_Nahuel_Nina.pdf" download rel="noopener noreferrer" target="_blank">
                 <button
                   type="button"
                   name="button"
@@ -970,97 +549,42 @@
         </div>
       </div>
 
-      <!-- Habilidades -->
-
+      <!-- HABILIDADES -->
       <h2 id="habilidades" class="text-2xl font-bold">Habilidades</h2>
-      <div
-        class="mx-5 py-5 d-flex justify-content-center"
-        style="margin-top: 10px; margin-bottom: 100px"
-      >
-        <!-- Desarrollo Frontend -->
+
+      <div class="mx-5 py-5 d-flex justify-content-center" style="margin-top: 10px; margin-bottom: 100px">
         <div class="d-flex justify-content-center">
           <div class="skills__area">
-            <h3 class="skills__title">Desarrollo Frontend</h3>
+            <h3 class="skills__title">Stack Principal</h3>
 
             <div class="skills__box">
               <div class="skills__group">
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  ></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">.NET (C#)</h3></div>
                 </div>
-
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  ></i>
-
-                  <div>
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">Angular</h3></div>
                 </div>
-
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  >
-                  </i>
-
-                  <div>
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">EF Core</h3></div>
                 </div>
               </div>
 
               <div class="skills__group">
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  >
-                  </i>
-
-                  <div>
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Básico</span>
-                  </div>
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">SQL Server / PostgreSQL</h3></div>
                 </div>
-
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  >
-                  </i>
-
-                  <div>
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">Git / GitHub</h3></div>
                 </div>
-
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  >
-                  </i>
-
-                  <div>
-                    <h3 class="skills__name">Angular</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
-
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">Linux / Bash</h3></div>
                 </div>
               </div>
             </div>
@@ -1071,7 +595,7 @@
 
         <div class="d-flex justify-content-center">
           <div class="skills__area">
-            <h3 class="skills__title">Desarrollo Backend</h3>
+            <h3 class="skills__title">Otros</h3>
 
             <div class="skills__box">
               <div class="skills__group">
@@ -1089,164 +613,84 @@
                 </div>
 
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  >
-                  </i>
-
-                  <div>
-                    <h3 class="skills__name">MySQL - SQL Server</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">Python</h3></div>
                 </div>
-
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  >
-                  </i>
-
-                  <div>
-                    <h3 class="skills__name">C# - .Net </h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">Tailwind CSS</h3></div>
                 </div>
               </div>
-
               <div class="skills__group">
                 <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  >
-                  </i>
-
-                  <div>
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i
-                    class="bi bi-patch-check"
-                    style="color: var(--color-principal)"
-                  >
-                  </i>
-
-                  <div>
-                    <h3 class="skills__name">S.O. Linux/bash</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
+                  <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                  <div><h3 class="skills__name">HTML / CSS / JavaScript</h3></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="d-flex justify-content-center" style="margin-top: -95px">
+        
+      </div>
+      <!-- HABILIDADES BLANDAS (DESKTOP) -->
+      <div class="d-flex justify-content-center" style="margin-top: -40px; margin-bottom: 80px;">
         <div class="skills__area">
           <h3 class="skills__title">Habilidades Blandas</h3>
 
           <div class="skills__box">
             <div class="skills__group">
               <div class="skills__data">
-                <i
-                  class="bi bi-patch-check"
-                  style="color: var(--color-principal)"
-                >
-                </i>
-
-                <div>
-                  <h3 class="skills__name">Trabajo en Equipo</h3>
-                </div>
+                <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                <div><h3 class="skills__name">Trabajo en equipo</h3></div>
               </div>
 
               <div class="skills__data">
-                <i
-                  class="bi bi-patch-check"
-                  style="color: var(--color-principal)"
-                >
-                </i>
-
-                <div>
-                  <h3 class="skills__name">Resolución de problemas</h3>
-                </div>
+                <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                <div><h3 class="skills__name">Resolución de problemas</h3></div>
               </div>
 
               <div class="skills__data">
-                <i
-                  class="bi bi-patch-check"
-                  style="color: var(--color-principal)"
-                >
-                </i>
-
-                <div>
-                  <h3 class="skills__name">Resiliencia</h3>
-                </div>
+                <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                <div><h3 class="skills__name">Comunicación efectiva</h3></div>
               </div>
             </div>
 
             <div class="skills__group">
               <div class="skills__data">
-                <i
-                  class="bi bi-patch-check"
-                  style="color: var(--color-principal)"
-                >
-                </i>
-
-                <div>
-                  <h3 class="skills__name">Comunicación efectiva</h3>
-                </div>
+                <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                <div><h3 class="skills__name">Adaptabilidad</h3></div>
               </div>
 
               <div class="skills__data">
-                <i
-                  class="bi bi-patch-check"
-                  style="color: var(--color-principal)"
-                >
-                </i>
-
-                <div>
-                  <h3 class="skills__name">Adaptabilidad</h3>
-                </div>
+                <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                <div><h3 class="skills__name">Ética profesional</h3></div>
               </div>
 
               <div class="skills__data">
-                <i
-                  class="bi bi-patch-check"
-                  style="color: var(--color-principal)"
-                >
-                </i>
-
-                <div>
-                  <h3 class="skills__name">Ética profesional</h3>
-                </div>
+                <i class="bi bi-patch-check" style="color: var(--color-principal)"></i>
+                <div><h3 class="skills__name">Resiliencia</h3></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Sección Proyectos -->
-
+      <!-- PROYECTOS -->
       <h2 id="proyectos" class="font-bold text-2xl my-5">Proyectos</h2>
 
       <section>
         <div class="contenedor mx-auto">
+
+          <!-- FastAPI + React -->
           <div class="carta">
             <div class="contenido">
               <div class="imgBx">
-                <img src="img/proyectos/img.png" class="rounded" />
+                <img src="img/proyectos/img.png" class="rounded" alt="FastAPI + React" />
               </div>
               <div class="contentBx">
                 <h3 class="tituloh3">
-                  Sistema web FastAPI y React<br /><span
-                    >Conexion con FastAPI y React</span
-                  >
+                  Sistema web FastAPI y React<br />
+                  <span>Integración FastAPI + React</span>
                 </h3>
               </div>
             </div>
@@ -1260,19 +704,16 @@
             </ul>
           </div>
 
+          <!-- Entrega alimentos -->
           <div class="carta">
             <div class="contenido">
               <div class="imgBx">
-                <img
-                  src="img/proyectos/SisremaEntregaAlimentos.png"
-                  class="rounded"
-                />
+                <img src="img/proyectos/SisremaEntregaAlimentos.png" class="rounded" alt="Entrega de alimentos" />
               </div>
               <div class="contentBx">
                 <h3 class="tituloh3">
-                  Sistema web Laravel<br /><span
-                    >Sistema de entrega de alimentos</span
-                  >
+                  Sistema web Laravel<br />
+                  <span>Sistema de entrega de alimentos</span>
                 </h3>
               </div>
             </div>
@@ -1286,10 +727,11 @@
             </ul>
           </div>
 
+          <!-- Laravel + Angular -->
           <div class="carta">
             <div class="contenido">
               <div class="imgBx">
-                <img src="img/proyectos/LA.jpg" class="rounded" />
+                <img src="img/proyectos/LA.jpg" class="rounded" alt="Laravel + Angular" />
               </div>
               <div class="contentBx">
                 <h3 class="tituloh3">Sistema web Laravel y Angular<br /><span>Conexion con Laravel y Angular</span></h3>
@@ -1305,13 +747,17 @@
             </ul>
           </div>
 
+          <!-- C# Desktop -->
           <div class="carta">
             <div class="contenido">
               <div class="imgBx">
-                <img src="img/proyectos/CSharp.png" class="rounded" />
+                <img src="img/proyectos/CSharp.png" class="rounded" alt="C# Desktop" />
               </div>
               <div class="contentBx">
-                <h3 class="tituloh3">Sistema de Escritorio C#<br /><span>Arboles Nodos Colas Bubble Sort</span></h3>
+                <h3 class="tituloh3">
+                  Aplicación de Escritorio C#<br />
+                  <span>Árboles, colas, Bubble Sort, Merge Sort</span>
+                </h3>
               </div>
             </div>
             <ul class="sci mx-auto">
@@ -1326,25 +772,22 @@
         </div>
       </section>
 
-      <!-- Sección Contacto -->
-
+      <!-- CONTACTO -->
       <h2 id="contacto" class="font-bold text-2xl">Contacto</h2>
-      <div
-        class="mx-5 py-5 d-flex justify-content-center"
-        style="margin-top: 10px; margin-bottom: 100px"
-      >
+
+      <div class="mx-5 py-5 d-flex justify-content-center" style="margin-top: 10px; margin-bottom: 100px">
         <div class="d-flex grid">
           <div class="justify-content-center">
             <div class="d-flex grid mb-3">
-              <i class="bi bi-envelope"></i>
+              <i class="bi bi-geo-alt"></i>
               <div class="d-block">
                 <h3 class="Titulo">Ubicación</h3>
-                <span class="SubTitulos">Cochabamba(Quillacollo)</span>
+                <span class="SubTitulos">Cochabamba (Quillacollo)</span>
               </div>
             </div>
 
             <div class="d-flex grid">
-              <i class="bi bi-geo-alt"></i>
+              <i class="bi bi-envelope"></i>
               <div class="d-block">
                 <h3 class="Titulo">Correo</h3>
                 <a
@@ -1360,13 +803,13 @@
             <div class="d-flex grid mb-3">
               <i class="bi bi-phone"></i>
               <div class="d-block">
-                <h3 class="Titulo">Numero</h3>
-                <span class="SubTitulos">(591) 72247797</span>
+                <h3 class="Titulo">Número</h3>
+                <span class="SubTitulos">+591 72247797</span>
               </div>
             </div>
+
             <div class="d-flex grid">
               <i class="bi bi-github"></i>
-
               <div class="d-block">
                 <h3 class="Titulo">GitHub</h3>
                 <a
